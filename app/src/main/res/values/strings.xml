@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">冰箱管理大師</string>
+    <string name="clickbackbtn">宿舍/家庭</string>
+    <string name="hint_food_title">食物名稱</string>
+
+
+    <string name="message_add_task">Add Task</string>
+    <string name="message_cancel">Cancel</string>
+    <string name="message_sure">OK</string>
+    <string name="message_remind">即將到期</string>
+    <string name="message_move_move">Let\'s do some exercise! Right now!</string>
+    <string name="remind_key">msg</string>
+    <string name="remind_value">notification</string>
+    <string name="task_id_key">id</string>
+    <string name="add_button">加入</string>
+
+    <string-array name="time_choice">
+        <item>30秒</item>
+        <item>4小時</item>
+        <item>8小時</item>
+        <item>12小時</item>
+    </string-array>
+
+</resources>

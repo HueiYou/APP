@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_foodinput"
+                android:layout_width="255dp"
+                android:layout_height="match_parent"
+                android:text="@string/hint_food_title"
+                android:textSize="22sp"/>
+
+            <EditText
+                android:id="@+id/et_foodinput"
+                android:layout_width="117dp"
+                android:layout_height="match_parent"
+                android:hint="@string/hint_food_title"
+                android:maxLines="1"
+                android:layout_marginLeft="150dp"/>
+
+
+        </FrameLayout>
+
+    <TextView
+        android:id="@+id/txt_timeinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="購買時間"
+        android:textSize="22sp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <DatePicker
+            android:id="@+id/datePicker_buy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_alerttimeinput"
+            android:layout_width="255dp"
+            android:layout_height="match_parent"
+            android:text="提醒時間"
+            android:textSize="22sp"/>
+
+        <Spinner
+            android:id="@+id/spinner_alert"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100dp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_remarkinput"
+            android:layout_width="255dp"
+            android:layout_height="match_parent"
+            android:text="備註"
+            android:textSize="22sp"/>
+
+        <EditText
+            android:id="@+id/et_remarkinput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:layout_marginLeft="100dp"
+            android:inputType="textMultiLine" />
+
+
+    </FrameLayout>
+    <!-- Add button -->
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/add_button"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/primary_text_dark"
+        android:background="@color/colorPrimary"
+        android:onClick="onClickAddFood"/>
+
+
+</LinearLayout>

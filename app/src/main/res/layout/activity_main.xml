@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="110dp"
+    android:weightSum="1"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/b_do_something_cool"
+        android:layout_width="195dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dp"
+        android:background="#00BFFF"
+        android:text="宿舍冰箱"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonhome"
+        android:layout_width="195dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.01"
+        android:background="#00BFFF"
+        android:text="家庭冰箱"
+        android:textSize="25sp" />
+
+</LinearLayout>
+
